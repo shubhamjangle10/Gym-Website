@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    
+    font-family: 'Balsamiq Sans', cursive;
+    
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100vw;
+    margin-top: 0;
+    background-color: rgb(85, 110, 255);
+    /* background-color: rgb(123, 255, 255); */
+    box-shadow: 10px 0 50px rgb(124, 133, 255);
+    display: flex;
+    padding-top: .5vh;
+    padding-bottom: 1vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left img{
+    height: 70px;
+    width: 157px;
+    border-radius: 20px;
+    margin-top: 4px;
+    margin-left: 23px;
+    border: 1px solid black;
+}
+
+.mid {
+    /* border: 2px solid rgb(140, 0, 255); */
+    display: inline-block;
+    /* width: 700px; */
+    /* float: left; */
+    margin: 10px auto;
+    /* margin-left: 100px; */
+}
+
+
+.mid li{
+    display: inline;
+    list-style: none;
+    margin: 3px 14px;
+    border-radius: 7px;
+}
+
+.mid li a{
+    text-decoration: none;
+    text-align: center;
+    color:rgb(255, 255, 255); 
+    font-size: 28px;
+    padding: 3px 14px;
+    border-radius: 6px;
+}
+
+.mid li a.active , .mid li a:hover{
+    border: 2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    background-color: rgb(54, 54, 54);
+    border-radius: 6px;
+}
+.right{
+    /* float: right; */
+    margin-right: 3vw;
+    margin-top:10px; 
+}
+
+#search{
+    font-size: 1.3rem;
+    font-weight:400;
+    text-align: center;
+    padding: 1.8px 1px;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 50%;
+    display: inline;
+    /* position: absolute; */
+    /* margin-right: 2vw; */
+
+}
+#search:hover{
+    background-color: rgb(255, 219, 219);
+}
+
+.btn{
+    font-size: 20px;
+    padding: 3px 14px;
+    margin: 0 5px;
+    color: rgb(40, 61, 19);
+    background-color: rgb(227, 232, 255);
+    border: 2px solid rgb(12, 32, 18);
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(145, 52, 199);
+    transform: scale(1.1);
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(145, 52, 199);
+    transform: scale(1.1);
+}
+/* Navbar Ends */
+/* Background image  */
+.back{
+        content: "";
+        height: 100vh;
+        width: 100vw;
+    }
+.back::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    /* top: 0; */
+    left: 0;
+    background-image: url('pull.webp');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+/* Black Container box */
+.container{
+    height:auto;
+    width:33vw;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    margin-top:13vh;
+    margin-left: 4.7vw;
+    border:2px solid rgb(28, 36, 28);
+    border-radius: 20px;
+    text-align: center;
+}
+    /* .box{
+        display: block;
+    } */
+    
+h1{
+    display: inline-block;
+    color:white;
+    font-size: 34px;
+    margin: 20px 10px 20px 10px;
+    padding: 4px 0px;
+}
+input{
+    font-size: 20px;
+    margin: 7px 0px;
+    padding: 5px 20px;
+    width: 23vw;
+    text-align: center;
+    border:2px solid white;
+    border-radius: 5px;
+}
+
+.bt2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 6px 20px;
+    border-radius: 8px;
+    color: rgb(32, 49, 105);
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(12, 32, 18);
+}
+@media (max-width:1260px){
+    .container{
+        width:45vw;
+        margin-top:14vh;
+        margin-left: 5vw;
+    }
+}
+@media (max-width:768px){
+    .container{
+        width:55vw;
+        margin-top:14vh;
+        margin-left: 25vw;
+    }
+    input{
+        font-size: 18px;
+        margin: 7px 0px;
+        width: 35vw;
+    }
+    
+}
+@media (max-width:600px){
+    .container{
+        width:70vw;
+        margin-top:14vh;
+        margin-left: 15vw;
+    }
+
+}
+@media (max-width:400px){
+    .container{
+        width:80vw;
+        margin-top:10vh;
+        margin-left: 10vw;
+    }
+    input{
+        font-size: 18px;
+        margin: 7px 0px;
+        width: 50vw;
+    }
+    
+}

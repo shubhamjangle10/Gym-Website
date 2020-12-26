@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shubham fitness</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:1260px)" href="phone.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img src="gym1.jpeg">
+        </div>
+        <div class="mid">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#" class="active">Fitness Calculator</a>
+                </li>
+
+                <li>
+                    <a href="more.html">More</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right" id="abcd">
+            <a href="more.html"><button class="btn">Call Us</button></a>
+            <a href="more.html"><button class="btn">Email Us</button></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <h2>Check Your Fitness Now !!!</h1>
+            <div class="b1">
+                <label for="height">Enter Your Height : </label>
+                <input type="number" name="height" id="h1" placeholder="In CM">
+                <label id="unit">CM</label>
+            </div>
+            <div class="b1">
+                <label for="weight">Enter Your Weight : </label>
+                <input type="number" name="weight" id="w1" placeholder="In KG">
+                <label id="unit">KG</label>
+            </div>
+            
+            <div class="b1">
+                <input type="submit" value="Submit" onclick="f1()" id="btn">
+            </div>
+            <div id="b2">
+                <label for="bmi">Your BMI IS :</label>
+                <label id="bmi"></label>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="calculator.js"></script>
+
+</html>

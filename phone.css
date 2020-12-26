@@ -1,0 +1,13 @@
+.navbar{
+    
+    display: flex;
+    flex-direction: column;
+}
+.left img{
+    height: 100px;
+    width: 200px;
+}
+.mid li{
+    display: flex;
+    flex-direction: column;
+}
